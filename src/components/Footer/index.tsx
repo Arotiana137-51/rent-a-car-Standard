@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
                 <Image
-                  src="/images/logo/logo-white.svg"
+                  src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
@@ -103,7 +103,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Home
                   </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Features
                   </a>
@@ -119,7 +119,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     About
                   </a>
@@ -127,7 +127,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Testimonial
                   </a>
@@ -144,7 +144,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     How it works
                   </a>
@@ -152,7 +152,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Privacy policy
                   </a>
@@ -160,7 +160,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Terms of Service
                   </a>
@@ -168,7 +168,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Refund policy
                   </a>
@@ -185,7 +185,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     LineIcons
                   </a>
@@ -193,7 +193,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Next.js Templates
                   </a>
@@ -201,7 +201,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     TailAdmin
                   </a>
@@ -209,7 +209,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     PlainAdmin
                   </a>
@@ -226,7 +226,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     FAQ
                   </a>
@@ -234,7 +234,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Blogs
                   </a>
@@ -242,7 +242,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     Support
                   </a>
@@ -250,7 +250,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
                   >
                     About
                   </a>

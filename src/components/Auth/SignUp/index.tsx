@@ -60,7 +60,7 @@ const SignUp = () => {
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo-white.svg"
+                    src="/images/logo/logo.svg"
                     alt="logo"
                     width={140}
                     height={30}
@@ -127,11 +127,11 @@ const SignUp = () => {
 
               <p className="text-body-secondary mb-4 text-base">
                 By creating an account you are agree with our{" "}
-                <a href="/#" className="text-primary hover:underline">
+                <a href="/#" className="text-lime-600 hover:underline">
                   Privacy
                 </a>{" "}
                 and{" "}
-                <a href="/#" className="text-primary hover:underline">
+                <a href="/#" className="text-lime-600 hover:underline">
                   Policy
                 </a>
               </p>
@@ -140,7 +140,7 @@ const SignUp = () => {
                 Already have an account?
                 <Link
                   href="/signin"
-                  className="pl-2 text-primary hover:underline"
+                  className="pl-2 text-lime-600 hover:underline"
                 >
                   Sign In
                 </Link>

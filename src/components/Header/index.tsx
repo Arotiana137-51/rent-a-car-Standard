@@ -84,7 +84,7 @@ const Header = () => {
                       src={`${
                         sticky
                           ? "/images/logo/logo.svg"
-                          : "/images/logo/logo-white.svg"
+                          : "/images/logo/logo.svg"
                       }`}
                       alt="logo"
                       width={140}
@@ -92,7 +92,7 @@ const Header = () => {
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/logo-white.svg"}
+                      src={"/images/logo/logo.svg"}
                       alt="logo"
                       width={140}
                       height={30}
@@ -146,7 +146,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:ml-8 lg:flex lg:gap-x-8 xl:ml-14 xl:gap-x-12">
+                  <ul className=" lg:ml-8 lg:flex lg:gap-x-8 xl:ml-14 xl:gap-x-12 justify-center">
                     {menuData.map((menuItem, index) =>
                       menuItem.path ? (
                         <li key={index} className="group relative">
@@ -155,8 +155,8 @@ const Header = () => {
                               onClick={navbarToggleHandler}
                               scroll={false}
                               href={menuItem.path}
-                              className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathUrl === menuItem?.path && "text-primary"
+                              className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-lime-600 dark:text-white dark:group-hover:text-lime-600 lg:inline-flex lg:px-0 lg:py-6 ${
+                                pathUrl === menuItem?.path && "text-lime-600"
                               }`}
                             >
                               {menuItem.title}
@@ -167,12 +167,12 @@ const Header = () => {
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                                  ? "text-dark group-hover:text-lime-600 dark:text-white dark:group-hover:text-lime-600"
                                   : "text-body-color dark:text-white lg:text-white"
                               } ${
                                 pathUrl === menuItem?.path &&
                                 sticky &&
-                                "!text-primary"
+                                "!text-lime-600"
                               }`}
                             >
                               {menuItem.title}
@@ -184,7 +184,7 @@ const Header = () => {
                           {pathUrl !== "/" ? (
                             <button
                               onClick={() => handleSubmenu(index)}
-                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}
+                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-dark group-hover:text-lime-600 dark:text-white dark:group-hover:text-lime-600 lg:inline-flex lg:px-0 lg:py-6`}
                             >
                               {menuItem.title}
 
@@ -209,7 +209,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                                  ? "text-dark group-hover:text-lime-600 dark:text-white dark:group-hover:text-lime-600"
                                   : "text-white"
                               }`}
                             >
@@ -244,8 +244,8 @@ const Header = () => {
                                 key={i}
                                 className={`block rounded px-4 py-[10px] text-sm ${
                                   pathUrl === submenuItem.path
-                                    ? "text-primary"
-                                    : "text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                                    ? "text-lime-600"
+                                    : "text-body-color hover:text-lime-600 dark:text-dark-6 dark:hover:text-lime-600"
                                 }`}
                               >
                                 {submenuItem.title}
@@ -286,7 +286,7 @@ const Header = () => {
                   </span>
                 </button>
 
-                {session?.user ? (
+                {/* {session?.user ? (
                   <>
                     <p
                       className={`loginBtn px-7 py-3 text-base font-medium ${
@@ -351,7 +351,7 @@ const Header = () => {
                       </>
                     )}
                   </>
-                )}
+                )} */}
               </div>
             </div>
           </div>

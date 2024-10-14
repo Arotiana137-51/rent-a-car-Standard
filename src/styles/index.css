@@ -17,16 +17,16 @@ body {
 }
 
 .sticky-menu #navbarCollapse li > a {
-  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
+  @apply text-dark hover:text-lime-600 hover:opacity-100 dark:text-white;
 }
 #navbarCollapse li .ud-menu-scroll.active {
   @apply opacity-70;
 }
 .sticky-menu #navbarCollapse li .ud-menu-scroll.active {
-  @apply text-primary opacity-100 dark:text-white;
+  @apply text-lime-600 opacity-100 dark:text-white;
 }
 .sticky-menu .loginBtn {
-  @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
+  @apply text-dark hover:text-lime-600 hover:opacity-100 dark:text-white;
 }
 
 .sticky-menu .signUpBtn {

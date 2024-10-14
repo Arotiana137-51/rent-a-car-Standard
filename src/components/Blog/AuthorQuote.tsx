@@ -7,7 +7,7 @@ const AuthorQuote = () => {
       data-wow-delay=".1s"
     >
       <div className="mx-auto max-w-[530px]">
-        <span className="mb-6 flex justify-center text-primary">
+        <span className="mb-6 flex justify-center text-lime-600">
           <svg
             width="44"
             height="26"

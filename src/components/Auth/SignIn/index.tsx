@@ -67,7 +67,7 @@ const Signin = () => {
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo-white.svg"
+                    src="/images/logo/logo.svg"
                     alt="logo"
                     width={140}
                     height={30}
@@ -128,13 +128,13 @@ const Signin = () => {
 
               <Link
                 href="/forgot-password"
-                className="mb-2 inline-block text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+                className="mb-2 inline-block text-base text-dark hover:text-lime-600 dark:text-white dark:hover:text-lime-600"
               >
                 Forget Password?
               </Link>
               <p className="text-body-secondary text-base">
                 Not a member yet?{" "}
-                <Link href="/signup" className="text-primary hover:underline">
+                <Link href="/signup" className="text-lime-600 hover:underline">
                   Sign Up
                 </Link>
               </p>

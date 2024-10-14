@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 1000);
+  // }, []);
 
   return (
     <html suppressHydrationWarning={true} className="!scroll-smooth" lang="en">
@@ -31,9 +31,9 @@ export default function RootLayout({
       <head />
 
       <body>
-        {loading ? (
+        {/* {loading ? (
           <PreLoader />
-        ) : (
+        ) : ( */}
           <SessionProvider>
             <ThemeProvider
               attribute="class"
@@ -47,7 +47,7 @@ export default function RootLayout({
               <ScrollToTop />
             </ThemeProvider>
           </SessionProvider>
-        )}
+        {/* )} */}
       </body>
     </html>
   );

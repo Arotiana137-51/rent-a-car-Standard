@@ -17,7 +17,7 @@ const Contact = () => {
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
                 <div className="mb-8 flex w-[330px] max-w-full">
-                  <div className="mr-6 text-[32px] text-primary">
+                  <div className="mr-6 text-[32px] text-lime-600">
                     <svg
                       width="29"
                       height="35"
@@ -38,7 +38,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="mb-8 flex w-[330px] max-w-full">
-                  <div className="mr-6 text-[32px] text-primary">
+                  <div className="mr-6 text-[32px] text-lime-600">
                     <svg
                       width="34"
                       height="25"
