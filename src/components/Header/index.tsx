@@ -71,7 +71,7 @@ const Header = () => {
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/images/logo/logo.svg`}
                       alt="logo"
                       width={240}
                       height={30}
@@ -298,7 +298,7 @@ const Header = () => {
                     {pathUrl !== "/" || sticky ? (
                       <button
                         onClick={() => signOut()}
-                        className="signUpBtn rounded-lg bg-primary bg-opacity-100 px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-20 hover:text-dark"
+                        className="signUpBtn rounded-lg bg-lime-800 bg-opacity-100 px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-20 hover:text-dark"
                       >
                         Sign Out
                       </button>
@@ -323,7 +323,7 @@ const Header = () => {
                         </Link>
                         <Link
                           href="/signup"
-                          className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                          className="rounded-lg bg-lime-800 px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-lime-800/90 dark:bg-white/10 dark:hover:bg-white/20"
                         >
                           Sign Up
                         </Link>
@@ -342,7 +342,7 @@ const Header = () => {
                           href="/signup"
                           className={`rounded-lg px-6 py-3 text-base font-medium text-white duration-300 ease-in-out ${
                             sticky
-                              ? "bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                              ? "bg-lime-800 hover:bg-lime-800/90 dark:bg-white/10 dark:hover:bg-white/20"
                               : "bg-white/10 hover:bg-white/20"
                           }`}
                         >

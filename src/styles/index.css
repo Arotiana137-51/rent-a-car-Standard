@@ -30,7 +30,7 @@ body {
 }
 
 .sticky-menu .signUpBtn {
-  @apply bg-primary hover:bg-dark text-white hover:text-white;
+  @apply bg-lime-800 hover:bg-dark text-white hover:text-white;
 }
 
 .navbarTogglerActive > span:nth-child(1) {

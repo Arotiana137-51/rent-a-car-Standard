@@ -116,7 +116,7 @@ const Signin = () => {
                     <button
                       onClick={loginUser}
                       type="submit"
-                      className="flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-primary/90"
+                      className="flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-lime-800 px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-lime-800/90"
                     >
                       Sign In {loading && <Loader />}
                     </button>
