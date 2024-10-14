@@ -1,14 +1,14 @@
 
 
 ## Car rental website made with Next.js 🚀
-Play Next.js Car rental websiteis a free, open-source solution ideal for startups, SaaS companies, and more. It offers essential UI components, authentication and database integration, and Stripe integration. Its superior design and functionality make it a go-to choice for launching a feature-rich SaaS website efficiently.
+Play Next.js Car rental websiteis. It offers essential UI components, authentication and database integration, and Stripe integration. Its superior design and functionality make it a go-to choice for launching a feature-rich SaaS website efficiently.
 
 ### [🚀 View Live Demo]
 
 
 
 ### All Essential Integrations - DB, Auth, Payment, MDX, and more ⚡
-Play Next.js SaaS Starter kit includes all the key integrations required to build a fully functional SaaS platform.
+This Car rental website  includes all the key integrations required to build a fully functional SaaS platform.
 
 - **PostgreSQL for Database**: Comes with PostgreSQL integration with Prisma which is a powerful and open-source relational database system ensures data integrity and reliability.
 
@@ -25,7 +25,7 @@ This Next.js Car rental website is **styled using Tailwind CSS**, a highly flexi
 
 ### Crafted Using [🎨 TailGrids Components](https://tailgrids.com)
 
-Play Next.js Car rental website, you can enjoy a professional-looking website that offers seamless operation, all while significantly reducing your web development time and effort.
+ Next.js Car rental website, you can enjoy a professional-looking website that offers seamless operation, all while significantly reducing your web development time and effort.
 ___
 
 
