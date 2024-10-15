@@ -1,7 +1,7 @@
 
 
 ## Car rental website made with Next.js 🚀
-Mada Car Rental Car rental websiteis. It offers essential UI components, authentication ( Can be activated at anytime, soon) and database integration, and Stripe integration. Its superior design and functionality make it a go-to choice for launching a feature-rich SaaS website efficiently.
+Madagas'Car Rental Car rental websiteis. It offers essential UI components, authentication ( Can be activated at anytime, soon) and database integration, and Stripe integration. Its superior design and functionality make it a go-to choice for launching a feature-rich SaaS website efficiently.
 
 ### [🚀 View Live Demo]
 
@@ -12,9 +12,9 @@ This Car rental website  includes all the key integrations required to build a f
 
 - **PostgreSQL for Database**: Comes with PostgreSQL integration with Prisma which is a powerful and open-source relational database system ensures data integrity and reliability.
 
-- **NextAuth for Authentication**: Mada Car Rental utilizes NextAuth, a versatile solution that provides secure login and user management.
+- **NextAuth for Authentication**: Madagas'Car Rental utilizes NextAuth, a versatile solution that provides secure login and user management.
 
-- **MDX for Blogs**: MDX uniquely combines Markdown and JSX, Mada Car Rental comes with complete blogging solution to create and maintain blog using MDX.
+- **MDX for Blogs**: MDX uniquely combines Markdown and JSX, Madagas'Car Rental comes with complete blogging solution to create and maintain blog using MDX.
 
 - **Stripe for Subscription Payments**: Stripe, a globally trusted payment processing platform, offers robust security features and smooth checkout experiences.
 

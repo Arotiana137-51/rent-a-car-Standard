@@ -14,7 +14,7 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mada Car Rental ",
+  title: "Madagas'Car Rental ",
   description: "Affordable and reliable car rentals in Madagascar.",
 };
 
