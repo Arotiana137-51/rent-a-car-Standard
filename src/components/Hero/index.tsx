@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+//import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
 
 const Hero = () => {
   return (
