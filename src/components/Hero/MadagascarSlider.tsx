@@ -28,7 +28,7 @@ const TypeWriterWrapper: React.FC<TypeWriterEffectProps> = (props) => {
 
 const slides = [
   {
-    image: '/images/madagascar-rainforest.jpg',
+    image: '/images/hero//images/madagascar-rainforest.jpg',
     title: 'Discover Madagascar',
     text: 'Experience the unique biodiversity of Madagascar',
     alt: 'Lush Madagascar rainforest'
