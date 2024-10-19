@@ -1,10 +1,13 @@
 "use client"
-import React from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import {  Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 
-import 'swiper/css/bundle';
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const slides = [
   {
@@ -30,12 +33,6 @@ const slides = [
     title: 'Baobab at Night',
     text: 'Baobab trees under the night sky.',
     alt: 'Baobab trees at night'
-  },
-  {
-    image: '/images/hero/brand.svg',
-    title: 'Brand Logo',
-    text: 'The brand logo in SVG format.',
-    alt: 'Brand logo'
   },
   {
     image: '/images/hero/Ilakaka.webp',
@@ -106,25 +103,25 @@ const slides = [
 ];
 
 
-const MadagascarSlider: React.FC = () => {
+const MadagascarSlider= () => {
   return (
-    <section aria-label="Madagascar highlights slider">
+    <section aria-label="Madagascar highlights slider" >
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation
+        modules={[ Pagination, Autoplay]}
+     
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 3600 }}
         loop={true}
-        className="w-full h-full"
+        className=" w-full mx-auto px-4 sm:max-w-[400px] md:max-w-[540px] lg:max-w-[1520px]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full">
+             <div className="relative h-screen w-screen"> 
               <Image
                 src={slide.image}
                 alt={slide.alt}
                 fill
-                style={{ objectFit: 'cover' }}
+                // style={{ objectFit: 'cover' }}
                 priority={index === 0}
                 loading={index === 0 ? 'eager' : 'lazy'}
               />

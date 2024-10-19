@@ -116,7 +116,7 @@ const Header = () => {
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-lime-500 focus:ring-2 lg:hidden"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[7px] rotate-45" : " "
@@ -147,7 +147,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                     }`}
                 >
-                  <ul className="lg:flex lg:items-center lg:justify-center xl:ml-14 xl:gap-x-12 ">
+                  <ul className="lg:flex lg:items-center lg:justify-center gap-x-6 xl:ml-14 xl:gap-x-12 ">
                     {menuData.map((menuItem, index) =>
                       menuItem.path ? (
                         <li key={index} className="group relative">
