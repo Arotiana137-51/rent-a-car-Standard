@@ -17,8 +17,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Free and Open-Source",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Online Booking",
+    paragraph: "Experience the convenience of our user-friendly online booking system. Whether you’re planning a last-minute trip or organizing a detailed itinerary, our platform allows you to book your car rental in Madagascar quickly and effortlessly.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -38,8 +38,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Modern Design",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "Diverse Vehicle Options",
+    paragraph: "Choose from a wide range of vehicles to suit your needs. From compact cars perfect for city driving to spacious SUVs for family adventures, and even luxury vehicles for special occasions, we have the perfect car for every journey.",
     btn: "Learn More",
     btnLink: "/#",
   },
