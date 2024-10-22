@@ -112,16 +112,20 @@ const MadagascarSlider= () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3600 }}
         loop={true}
-        className=" w-full mx-auto px-4 sm:max-w-[400px] md:max-w-[540px] lg:max-w-[1520px]"
+        className=" w-full h-full"//mx-auto sm:max-w-[400px] md:max-w-[540px] lg:max-w-[1520px]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-             <div className="relative h-screen w-screen"> 
+             <div className="relative w-full h-full"> 
               <Image
                 src={slide.image}
                 alt={slide.alt}
-                fill
-                // style={{ objectFit: 'cover' }}
+                //fill
+                width={1920}
+                height={1080}
+                // sizes="100vw"
+                // className='object-cover'
+                // quality={90}
                 priority={index === 0}
                 loading={index === 0 ? 'eager' : 'lazy'}
               />

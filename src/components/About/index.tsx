@@ -12,21 +12,16 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                Your Journey, Our Wheels 9 years of Trust
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
+                With 9 years of experience, our car rental cooperative in Madagascar is dedicated to making your journey unforgettable. As a member-owned organization, we work together to provide reliable vehicles and exceptional service, ensuring you explore Madagascar your way. Whether you’re planning a spontaneous trip or a well-planned adventure, our cooperative approach means you benefit from shared resources and collective expertise.
                   <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                  Trust us to be your travel partner as you unlock the road to adventure and discover the island’s hidden gems. Drive with us and experience the difference that 9 years of cooperative excellence brings!
                 </p>
 
                 <a
-                  href="/#"
+                  href="/about"
                   className="inline-flex items-center justify-center rounded-md bg-lime-800 px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-lime-800/90"
                 >
                   Know More
@@ -41,10 +36,10 @@ const About = () => {
                     className={`relative mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px] `}
                   >
                     <Image
-                      src="/images/about/about-image-01.jpg"
+                      src="/images/about/4x4Gris.webp"
                       alt="about image"
                       fill
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-cover object-left"
                     />
                   </div>
                 </div>
@@ -52,7 +47,7 @@ const About = () => {
                 <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                   <div className="relative mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
                     <Image
-                      src="/images/about/about-image-02.jpg"
+                      src="/images/about/beretDuPape.webp"
                       alt="about image"
                       fill
                       className="h-full w-full object-cover object-center"

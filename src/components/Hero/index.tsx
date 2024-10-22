@@ -5,13 +5,14 @@ import MadagascarSlider from "./MadagascarSlider";
 
 const Hero = () => {
   return (
-    <>
+    // ra ecran latsaky ny lg de aleo ny original no itoetra, jerena demain
+    <div className="relative min-h-screen lg:h-[1000px] w-full overflow-hidden">
        <div className="absolute inset-0 z-0">
         <MadagascarSlider />
       </div>
       <section
         id="home"
-        className="relative overflow-hidden h-screen pt-[250px] md:pt-[270px] lg:pt-[330px]"
+        className="relative overflow-hidden  pt-[250px] md:pt-[270px] lg:pt-[330px]"
       >
          
         <div className="container relative z-10  border-dark-3/20 bg-dark/20">
@@ -33,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
