@@ -39,12 +39,12 @@ const PricingBox = ({ product }: { product: Price }) => {
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
             {(product.unit_amount / 100).toLocaleString("en-US", {
-              currency: "USD",
+              currency: "EUR",
             })}
           </span>
           <span className="text-base font-normal text-body-color dark:text-dark-6">
             {" "}
-            Per Month
+            Per Day
           </span>
         </h2>
 

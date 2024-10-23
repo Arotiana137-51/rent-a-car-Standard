@@ -13,8 +13,8 @@ const Pricing = () => {
         <div className="mb-[60px]">
           <SectionTitle
             subtitle="Pricing Table"
-            title="Our Pricing Plan"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title={`Your Pricing Plan \n is Our Pricing Plan`}
+            paragraph="Discover our car rental options for every budget, we have a vehicle that match your funds! Our flexible pricing plans ensure you find the perfect vehicle at the best rate for your needs."
             center
           />
         </div>
