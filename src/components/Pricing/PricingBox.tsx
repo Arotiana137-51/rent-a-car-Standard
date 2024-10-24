@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import OfferList from "./OfferList";
 import { Price } from "@/types/price";
+import Link from "next/link";
 
 const PricingBox = ({ product }: { product: Price }) => {
   // POST request
@@ -59,12 +60,18 @@ const PricingBox = ({ product }: { product: Price }) => {
           </div>
         </div>
         <div className="w-full">
-          <button
+       {/*    <button
             onClick={handleSubscription}
             className="inline-block rounded-md bg-lime-800 px-7 py-3 text-center text-base font-medium text-white transition duration-300 hover:bg-lime-800/90"
           >
             Purchase Now
-          </button>
+          </button> */}
+          <Link 
+          href={"/contact"}
+           className="inline-block rounded-md bg-lime-800 px-7 py-3 text-center text-base font-medium text-white transition duration-300 hover:bg-lime-800/90"
+          >
+            Purchase Now
+          </Link>
         </div>
       </div>
     </div>
