@@ -8,8 +8,8 @@ const HomeBlogSection = ({ posts }: any) => {
         <div className="mb-[60px]">
           <SectionTitle
             subtitle="Our Blogs"
-            title="Our Recent News"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Things you need to know"
+            paragraph="Essential tips and information you need to know before traveling to Madagascar."
             width="640px"
             center
           />
