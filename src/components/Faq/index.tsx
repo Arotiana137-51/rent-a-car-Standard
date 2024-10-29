@@ -356,11 +356,11 @@ const Faq = () => {
         <span className="absolute top-96 left-1/2 transform -translate-x-1/2 -z-[2] ">
           <svg
             version="1.1" width="1256px" height="960px"
-            shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision"
-            image-rendering="optimizeQuality"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            shapeRendering="geometricPrecision"
+            textRendering="geometricPrecision"
+            imageRendering="optimizeQuality"
+            fillRule="evenodd"
+            clipRule="evenodd"
             xmlns="http://www.w3.org/2000/svg"
             className="fit-c"
           >

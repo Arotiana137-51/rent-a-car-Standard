@@ -19,8 +19,9 @@ const PopularArticle = (props: {
             alt="image"
             width={80}
             height={80}
-            objectFit="cover"
-            objectPosition="center"
+            className="object-cover object-center"
+            // objectFit="cover"
+            // objectPosition="center"
           />
         </div>
         <div className="w-full">

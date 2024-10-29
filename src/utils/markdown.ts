@@ -21,10 +21,14 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
   const items: any = {};
 
-  function processImages(content: string) {
+  function processContent(content: string) {
     // You can modify this function to handle image processing
     // For example, replace image paths with actual HTML image tags
-    return content.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$1" alt="" />');
+   //  tsy mandeha akory ity return content.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$2" alt="$1" />');
+
+   // Process citations 
+  //  content = content.replace(/\[(\d+)\]\((.*?)\)/g, '<sup><a href="$2">[$1]</a></sup>');
+   return content
   }
 
   // Ensure only the minimal needed data is exposed
@@ -34,7 +38,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
     if (field === "content") {
       // You can modify the content here to include images
-      items[field] = processImages(content);
+      items[field] = processContent(content);
     }
 
     if (field === "metadata") {

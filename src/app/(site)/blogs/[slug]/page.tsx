@@ -147,7 +147,7 @@ export default async function Post({ params }: Props) {
                             <path d="M13.9998 1.9751H1.9998C1.1498 1.9751 0.424805 2.6751 0.424805 3.5501V12.9751C0.424805 13.3751 0.649805 13.7501 1.0248 13.9251C1.1748 14.0001 1.3248 14.0251 1.4748 14.0251C1.7248 14.0251 1.9498 13.9501 2.1498 13.7751L4.2748 12.0251H13.9998C14.8498 12.0251 15.5748 11.3251 15.5748 10.4501V3.5501C15.5748 2.6751 14.8498 1.9751 13.9998 1.9751ZM14.4498 10.4501C14.4498 10.7001 14.2498 10.9001 13.9998 10.9001H4.0748C3.9498 10.9001 3.8248 10.9501 3.7248 11.0251L1.5748 12.8001V3.5501C1.5748 3.3001 1.7748 3.1001 2.0248 3.1001H14.0248C14.2748 3.1001 14.4748 3.3001 14.4748 3.5501V10.4501H14.4498Z" />
                           </svg>
                         </span>
-                        09
+                        17
                       </p>
                       <p className="flex items-center text-sm font-medium text-white">
                         <span className="mr-3">
@@ -177,7 +177,7 @@ export default async function Post({ params }: Props) {
                 </div>
                 <div className="w-full px-4 lg:w-4/12">
                   <div>
-                    <Newsletter />
+                    {/* <Newsletter /> */}
 
                     <div className="-mx-4 mb-8 flex flex-wrap">
                       <div className="w-full px-4">
