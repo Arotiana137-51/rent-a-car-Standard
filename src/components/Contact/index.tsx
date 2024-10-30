@@ -1,4 +1,63 @@
+"use client";
+import { useState, FormEvent } from "react";
+
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      setStatus({
+        type: "success",
+        message: "Message sent successfully!",
+      });
+      setFormData({ fullName: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message: error instanceof Error ? error.message : "Failed to send message",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+
   return (
     <section id="contact" className="relative py-20 md:py-[120px]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
@@ -7,16 +66,16 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
-              <div className="ud-contact-title mb-12 lg:mb-[150px]">
-                <span className="mb-6 block text-base font-medium text-dark dark:text-white">
-                  CONTACT US
-                </span>
-                <h2 className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                  Let&#39;s talk about your problem.
+              <div className="ud-contact-title mb-12 lg:mb-[150px] ">
+                <h2 className="max-w-[260px] text-[35px] font-semibold -top-32 text-dark dark:text-white">
+                CONTACT US
                 </h2>
+                <span className="mb-6 block text-base font-medium text-dark dark:text-white">
+                Simply provide the following details in your email:<br/>  Pick-up location,<br/>  Drop-off location,<br/>  Travel itinerary (major stops),<br/>  Desired vehicle type,<br/>  Travel dates and times.<br/>  It’s that easy!
+                </span>
               </div>
-              <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
-                <div className="mb-8 flex w-[330px] max-w-full">
+              <div className="-ml-24 mb-12 flex flex-wrap justify-evenly lg:mb-0">
+                <div className="mb-8 flex w-[230px] max-w-full">
                   <div className="mr-6 text-[32px] text-lime-600">
                     <svg
                       width="29"
@@ -33,11 +92,11 @@ const Contact = () => {
                       Our Location
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      401 Broadway, 24th Floor, Orchard Cloud View, London
+                      0116 F 12 Ave des Thermes, Antsirabe Vakinankaratra, Madagascar
                     </p>
                   </div>
                 </div>
-                <div className="mb-8 flex w-[330px] max-w-full">
+                <div className="mb-8 flex w-[230px] max-w-full">
                   <div className="mr-6 text-[32px] text-lime-600">
                     <svg
                       width="34"
@@ -50,13 +109,31 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                      How Can We Help?
+                      If you have a specific message
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
                       info@yourdomain.com
                     </p>
                     <p className="mt-1 text-base text-body-color dark:text-dark-6">
                       contact@yourdomain.com
+                    </p>
+                  </div>
+                </div>
+                <div className="mb-8 flex w-[230px] max-w-full">
+                  <div className="mr-6 ">
+                  <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.3308 15.9402L15.6608 14.6101C15.8655 14.403 16.1092 14.2384 16.3778 14.1262C16.6465 14.014 16.9347 13.9563 17.2258 13.9563C17.517 13.9563 17.8052 14.014 18.0739 14.1262C18.3425 14.2384 18.5862 14.403 18.7908 14.6101L20.3508 16.1702C20.5579 16.3748 20.7224 16.6183 20.8346 16.887C20.9468 17.1556 21.0046 17.444 21.0046 17.7351C21.0046 18.0263 20.9468 18.3146 20.8346 18.5833C20.7224 18.8519 20.5579 19.0954 20.3508 19.3L19.6408 20.02C19.1516 20.514 18.5189 20.841 17.8329 20.9541C17.1469 21.0672 16.4427 20.9609 15.8208 20.6501C10.4691 17.8952 6.11008 13.5396 3.35083 8.19019C3.03976 7.56761 2.93414 6.86242 3.04914 6.17603C3.16414 5.48963 3.49384 4.85731 3.99085 4.37012L4.70081 3.65015C5.11674 3.23673 5.67937 3.00464 6.26581 3.00464C6.85225 3.00464 7.41488 3.23673 7.83081 3.65015L9.40082 5.22021C9.81424 5.63615 10.0463 6.19871 10.0463 6.78516C10.0463 7.3716 9.81424 7.93416 9.40082 8.3501L8.0708 9.68018C8.95021 10.8697 9.91617 11.9926 10.9608 13.04C11.9994 14.0804 13.116 15.04 14.3008 15.9102L14.3308 15.9402Z" stroke="#65a30d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.9998 3L15.3398 8.66" stroke="#65a30d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19.5898 8.65991H15.3398V4.40991" stroke="#65a30d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                  <div>
+                    <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                      Or Call directly
+                    </h3>
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      +261 32 45 266 95
+                    </p>
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      +261 34 15 238 38
+                    </p>
+                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
+                      +261 33 05 990 59 
                     </p>
                   </div>
                 </div>
@@ -72,7 +149,20 @@ const Contact = () => {
               <h3 className="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
                 Send us a Message
               </h3>
-              <form>
+
+              {status.type && (
+                <div
+                  className={`mb-4 p-4 rounded ${
+                    status.type === "success"
+                      ? "bg-green-100 text-green-700"
+                      : "bg-red-100 text-red-700"
+                  }`}
+                >
+                  {status.message}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit}>
                 <div className="mb-[22px]">
                   <label
                     htmlFor="fullName"
@@ -83,8 +173,11 @@ const Contact = () => {
                   <input
                     type="text"
                     name="fullName"
-                    placeholder="Adam Gelius"
-                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
+                    placeholder=" Your Name"
+                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-lime-600 focus:outline-none dark:border-dark-3 dark:text-white"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="mb-[22px]">
@@ -97,8 +190,11 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="example@yourmail.com"
-                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
+                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-lime-600 focus:outline-none dark:border-dark-3 dark:text-white"
+                    required
                   />
                 </div>
                 <div className="mb-[22px]">
@@ -111,8 +207,10 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    placeholder="+885 1254 5211 552"
-                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="+1 (770) 555 123 4567"
+                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-lime-600 focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
                 <div className="mb-[30px]">
@@ -124,17 +222,21 @@ const Contact = () => {
                   </label>
                   <textarea
                     name="message"
-                    rows={1}
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
                     placeholder="type your message here"
-                    className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
+                    className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-lime-600 focus:outline-none dark:border-dark-3 dark:text-white"
+                    required
                   ></textarea>
                 </div>
                 <div className="mb-0">
                   <button
                     type="submit"
+                    disabled={loading}
                     className="inline-flex items-center justify-center rounded-md bg-lime-800 px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-lime-800/90"
                   >
-                    Send
+                  {loading ? "Sending..." : "Send"}
                   </button>
                 </div>
               </form>

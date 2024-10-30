@@ -39,7 +39,7 @@ const Testimonials = () => {
         <SectionTitle
           subtitle="Testimonials"
           title="What our Client Say"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Our clients have experienced the best of Madagascar with our top-rated car rental services. From seamless booking processes to knowledgeable driver-guides, we ensure every journey is memorable. But don't just take our word for it. Here's what our satisfied customers have to say:"
           width="640px"
           center
         />

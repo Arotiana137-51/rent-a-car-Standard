@@ -82,13 +82,13 @@ const ForgotPassword = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
+                    className="w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-lime-600 focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-lime-600"
                   />
                 </div>
                 <div className="">
                   <button
                     type="submit"
-                    className="flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-lime-800 px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
+                    className="flex w-full cursor-pointer items-center justify-center rounded-md border border-lime-600 bg-lime-800 px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
                   >
                     Send Email {loader && <Loader />}
                   </button>

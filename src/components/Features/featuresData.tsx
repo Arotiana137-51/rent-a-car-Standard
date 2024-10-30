@@ -152,7 +152,6 @@ const featuresData: Feature[] = [
     ),
     title: "Easy Online Booking",
     paragraph: `Just do it with an email. Whether it’s a spontaneous trip or a well-planned journey, you can book your car rental in Madagascar quickly and effortlessly through a simple email.📨`,
-   //\n Simply provide the following details in your email:\n Pick-up location,\n Drop-off location,\n Travel itinerary (major stops),\n Desired vehicle type,\n Travel dates and times.\n It’s that easy!
     // Experience the convenience of our user-friendly online booking system. Whether you’re planning a last-minute trip or organizing a detailed itinerary, our platform allows you to book your car rental in Madagascar quickly and effortlessly
     btn: "Learn More",
     btnLink: "/#",

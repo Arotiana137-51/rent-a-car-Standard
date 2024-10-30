@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
     "Contact Page | Car rental services in Madagascar",
-  description: "This is contact page description",
+  description: "Contact a car rental service",
 };
 
 const ContactPage = () => {
