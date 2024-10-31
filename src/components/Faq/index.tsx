@@ -56,7 +56,7 @@ const Faq = () => {
             />
             <SingleFaq
               question="Can I cancel or modify my car rental reservation?"
-              answer="Yes, we offer flexible booking policies to accommodate your needs. You can cancel or modify your reservation up to 24 hours before the scheduled pickup time without incurring any charges. For more details on our cancellation policy, please contact our customer support team."
+              answer="Yes, we offer flexible booking policies to accommodate your needs. You can cancel or modify your reservation up to 72 hours before the scheduled pickup time without incurring any charges. For more details on our cancellation policy, please contact our customer support team."
             />
           </div>
         </div>

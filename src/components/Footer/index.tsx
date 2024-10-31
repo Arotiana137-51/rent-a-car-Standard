@@ -4,31 +4,35 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer
-      className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
+      className="wow fadeInUp relative z-10 bg-lime-600 pt-20 lg:pt-[100px]"
       data-wow-delay=".15s"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
-              <Link href="/" className="mb-6 inline-block max-w-[160px]">
+
+              <Link href="/" className="mb-6 flex flex-row items-center max-w-[160px]">
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
-                  height={30}
+                  height={40}
                   className="max-w-full"
                 />
+                <span className="sm:text-lg md:text-2xl text-white">
+                  Madagas'Car Rental
+                </span>
               </Link>
+
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                We create digital experiences for brands and companies by using
-                technology.
+                A car rental service in Madagascar.
               </p>
               <div className="-mx-3 flex items-center">
                 <a
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="px-3 text-gray-7   hover:text-white"
                 >
                   <svg
                     width="22"
@@ -44,7 +48,7 @@ const Footer = () => {
                 <a
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="px-3 text-gray-7   hover:text-white"
                 >
                   <svg
                     width="22"
@@ -60,7 +64,7 @@ const Footer = () => {
                 <a
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="px-3 text-gray-7   hover:text-white"
                 >
                   <svg
                     width="22"
@@ -78,7 +82,7 @@ const Footer = () => {
                 <a
                   aria-label="social link"
                   href="/#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="px-3 text-gray-7   hover:text-white"
                 >
                   <svg
                     width="22"
@@ -94,7 +98,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+          <div className="w-full px-10 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 About Us
@@ -103,7 +107,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Home
                   </a>
@@ -111,7 +115,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Features
                   </a>
@@ -119,7 +123,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     About
                   </a>
@@ -127,7 +131,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Testimonial
                   </a>
@@ -144,31 +148,29 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     How it works
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                <Link
+                  href="/policy"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Privacy policy
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                 <Link
+                  href="/terms"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Terms of Service
-                  </a>
-                </li>
+                 </Link>
                 <li>
                   <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    href="/legals/TermsofServices.tsx"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Refund policy
                   </a>
@@ -176,47 +178,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
-                Our Products
-              </h4>
-              <ul>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
-                  >
-                    LineIcons
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
-                  >
-                    Next.js Templates
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
-                  >
-                    TailAdmin
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
-                  >
-                    PlainAdmin
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
@@ -226,7 +188,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     FAQ
                   </a>
@@ -234,7 +196,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Blogs
                   </a>
@@ -242,7 +204,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     Support
                   </a>
@@ -250,7 +212,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-lime-600"
+                    className="mb-3 inline-block text-base text-gray-7  hover:text-white"
                   >
                     About
                   </a>
@@ -267,24 +229,24 @@ const Footer = () => {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
                 <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <a
-                    href="/#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  <Link
+                  href="/policy"
+                    className="px-3 text-base text-gray-7   hover:text-white hover:underline"
                   >
                     Privacy policy
-                  </a>
-                  <a
+                  </Link>
+                  {/* <a
                     href="/#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                    className="px-3 text-base text-gray-7   hover:text-white hover:underline"
                   >
                     Legal notice
-                  </a>
-                  <a
-                    href="/#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  </a> */}
+                   <Link
+                  href="/terms"
+                    className="px-3 text-base text-gray-7   hover:text-white hover:underline"
                   >
                     Terms of service
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -293,12 +255,12 @@ const Footer = () => {
                 <p className="text-base text-gray-7">
                   Designed and Developed by{" "}
                   <a
-                    href="https://tailgrids.com"
+                    href="https://aportfolio.vercel.app"
                     rel="nofollow noopner noreferrer"
                     target="_blank"
                     className="text-gray-1 hover:underline"
                   >
-                    TailGrids and Next.js Templates
+                    Arotiana|Madagas'Car Rental
                   </a>
                 </p>
               </div>
