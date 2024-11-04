@@ -23,11 +23,10 @@ export const metadata: Metadata = {
     title: 'Madagascar Car Rental - Rent with Driver Guide',
     description: 'Experience the best car rental service in Madagascar. Rent a car with a professional driver-guide for a safe and enjoyable trip.',
     type: 'website',
-    //de ity tsy maintsy mbola soloina
-    url: 'https://www.madagascar-rental.com',
+    url: 'https://www.madagas-car.rentals',
     images: [
       {
-        url: 'https://www.madagascar-rental.com/images/og-image.jpg',
+        url: 'https://www.madagas-car.rentals/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Madagascar Car Rental Service',
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     description: 'Experience the best car rental service in Madagascar. Rent a car with a professional driver-guide for a safe and enjoyable trip.',
     images: [
       {
-        url: 'https://www.madagascar-rental.com/images/twitter-image.jpg',
+        url: 'https://www.madagas-car.rentals/images/twitter-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Madagascar Car Rental Service',
@@ -50,10 +49,10 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: 'https://www.madagascar-rental.com/terms-and-conditions',
+    canonical: 'https://www.madagas-car.rentals/terms-and-conditions',
     languages: {
-      'en-US': 'https://www.madagascar-rental.com/en/terms-and-conditions',
-      'fr-FR': 'https://www.madagascar-rental.com/fr/conditions-generales',
+      'en-US': 'https://www.madagas-car.rentals/en/terms-and-conditions',
+      'fr-FR': 'https://www.madagas-car.rentals/fr/conditions-generales',
     },
   },
 };
