@@ -21,7 +21,7 @@ const Footer = () => {
                   className="max-w-full"
                 />
                 <span className="sm:text-lg md:text-2xl text-white">
-                  Madagas'Car Rental
+                  Madagas&apos;Car Rental
                 </span>
               </Link>
 
@@ -260,7 +260,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-gray-1 hover:underline"
                   >
-                    Arotiana|Madagas'Car Rental
+                    Arotiana|Madagas&apos;Car Rental
                   </a>
                 </p>
               </div>

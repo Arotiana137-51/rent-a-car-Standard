@@ -77,7 +77,7 @@ const Header = () => {
                       className="hidden dark:block"
                     />
                     <span className="-ml-5 mr-32 text-base sm:text-lg md:text-2xl  text-dark dark:text-white">
-                      Madagas'Car Rental
+                      Madagas&apos;Car Rental
                     </span>
                   </>
                 ) : (
@@ -103,7 +103,7 @@ const Header = () => {
                     <span className={`-ml-5 mr-32 text-base sm:text-lg md:text-2xl  ${
                       sticky ? "text-dark dark:text-white" : "text-white"
                     }`}>
-                      Madagas'Car Rental
+                      Madagas&apos;Car Rental
                     </span>
                   </>
                 )}

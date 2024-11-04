@@ -17,16 +17,16 @@ const TermsOfService= () => {
         <section>
           <h2 className="text-xl font-semibold mb-4">1. Definitions</h2>
           <ul className="space-y-2">
-            <li><span className="font-medium">"MR"</span> means Madagascar Rental;</li>
-            <li><span className="font-medium">"Company"</span> means Madagascar Rental SARL;</li>
-            <li><span className="font-medium">"You"</span> or <span className="font-medium">"Hirer"</span> means the
+            <li><span className="font-medium">&quot;MR&quot;</span> means Madagascar Rental;</li>
+            <li><span className="font-medium">&quot;Company&quot;</span> means Madagascar Rental SARL;</li>
+            <li><span className="font-medium">&quot;You&quot;</span> or <span className="font-medium">&quot;Hirer&quot;</span> means the
               person(s) who have signed the Rental Agreement;</li>
-            <li><span className="font-medium">"Driver"</span> means the professional driver provided by Madagascar Rental;
+            <li><span className="font-medium">&quot;Driver&quot;</span> means the professional driver provided by Madagascar Rental;
             </li>
-            <li><span className="font-medium">"Rental Agreement"</span> means the contract between You and the Owner;</li>
-            <li><span className="font-medium">"Vehicle"</span> means the rented vehicle as described in your reservation;
+            <li><span className="font-medium">&quot;Rental Agreement&quot;</span> means the contract between You and the Owner;</li>
+            <li><span className="font-medium">&quot;Vehicle&quot;</span> means the rented vehicle as described in your reservation;
             </li>
-            <li><span className="font-medium">"MR Insurance"</span> means Madagascar Rental's insurance policy.</li>
+            <li><span className="font-medium">&quot;MR Insurance&quot;</span> means Madagascar Rental&apos;s insurance policy.</li>
           </ul>
         </section>
         <section>
@@ -51,7 +51,7 @@ const TermsOfService= () => {
             <ul className="list-disc pl-6 space-y-2">
               <li>A replacement vehicle will be provided as soon as possible</li>
               <li>If the breakdown repair lasts more than 5 hours, the Hirer will not be charged the daily fees of the car rental during the time the vehicle is out of service.</li>
-              <li>Time lost within the initial 24-hour period is at the Hirer's expense</li>
+              <li>Time lost within the initial 24-hour period is at the Hirer&apos;s expense</li>
               <li>Madagascar Rental is not liable for refunding activity fees, accommodations, or other related expenses</li>
             </ul>
           </div>
